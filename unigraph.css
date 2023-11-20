@@ -1,0 +1,344 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    
+    z-index: 1;
+    background-color:#fcea92 ;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:470px) {
+    nav{
+        display: flex;
+        flex-direction: row;
+        min-width: 220px;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+        
+    }
+}
+
+.socials{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+
+
+
+li a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+
+
+li a:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.logo img{
+  width: 120px;
+  margin-right: 90px;
+}
+
+.twitter{
+ width: 10px;
+}
+
+.magiceden{
+    width: 30px;
+}
+
+.discord{
+    width: 14px;
+}
+
+.aboutbody{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.aboutbody h1{
+   margin: 0;
+   color: #fcea92;
+   padding-bottom: 20px;
+   
+}
+
+.aboutbody p{
+    margin: 0 auto;
+    width: 40%;
+}
+
+.faqdetails a{
+    color: #fcea92;
+    text-decoration: none;
+}
+
+
+.faqdetails a:hover{
+    text-decoration: underline;
+}
+    
+
+#sliding-home{
+    background-color: #fcea92;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height: 500px;
+   
+   
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 10px;
+    
+    
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border: 5px solid black;
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1 rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+} 
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fcea92;
+    border: 1px solid black;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    margin-right: 5px;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+
+.aboutbody{
+    background-color: #000000;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.aboutbody p{
+    margin-top: 0;
+    color:  #fcea92;
+    margin-bottom: 20px;
+    
+}
+
+#team{
+    background-color: #fcea92;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    border: 2px solid black;
+    
+    
+    
+}
+
+.teamname{
+    flex: 1 0 0;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    
+    
+}
+@media screen and (max-width:470px) {
+    #team{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px;
+        min-width: 220px;
+
+    }
+}
+.teamimage1{
+    width: 150px;
+    border-radius: 2px;
+    box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.teamname p{
+    text-align: center;
+}
+
+.minitwitter{
+    width: 15px;
+}
+
+.foundatn{
+    width: 50px;
+}
+
+.brokensea{
+    width: 20px;
+}
+
+.socialimages{
+    display: inline-flex;
+    align-items: center;
+    
+}
+
+.webwide{
+    width: 20px;
+    margin-right: 3px;
+}
+
+/* FAQ */
+#FAQ{
+    background-color: black;
+    font-family: 'Changa', sans-serif;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+#accordion{
+    margin: 0 auto;
+    list-style: none;
+    
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin-bottom: 10px;
+    background-color: #fcea92;
+    padding: 4px;
+    border-radius: 4px;
+    
+   
+    
+    
+}
+@media screen and (max-width:907px) {
+    #FAQ{
+       min-width: 220px;
+    }
+}
+
+
+#accordion li{
+    color:  #fcea92;
+    background-color: black;
+}
+
+
+#accordion li label{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color:  #fcea92;
+}
+
+#accordion label + input[type="radio"]{
+    display: none;
+}
+
+#accordion .contents{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .contents{
+    max-height: 400px;
+}
+
+    
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0b0b0b; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #272424; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
